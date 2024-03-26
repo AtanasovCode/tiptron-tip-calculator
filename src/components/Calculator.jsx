@@ -19,7 +19,7 @@ const Calculator = ({
   return (
     <div
       className="
-    bg-white px-6 py-12 flex flex-col rounded-xl w-full
+    bg-white dark:bg-gray-800 dark:text-white px-6 py-12 flex flex-col rounded-xl w-full
     md:w-3/4 md:flex-row md:m-6 md:p-6
     xl:w-3/5
   "
@@ -47,7 +47,7 @@ const Calculator = ({
               placeholder="custom"
               className="
               [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-              capitalize p-2 rounded-lg bg-light-grayish-cyan
+              capitalize p-2 rounded-lg bg-light-grayish-cyan dark:bg-blue-700 dark:text-white
               "
               onChange={(e) => setPercent(e.currentTarget.value)}
             />

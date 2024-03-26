@@ -48,7 +48,7 @@ const App = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-light-grayish-cyan flex items-center justify-center font-mono">
+    <div className="w-screen h-screen bg-light-grayish-cyan dark:bg-gray-700 flex items-center justify-center font-mono">
       <Calculator
         percent={percent}
         setPercent={setPercent}

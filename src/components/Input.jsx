@@ -11,7 +11,7 @@ const Input = ({ formFor, icon, placeholder, label, alt, handleChange }) => {
             placeholder={placeholder}
             className="
               [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
-              w-full py-2 px-5 bg-light-grayish-cyan rounded-xl text-right"
+              w-full py-2 px-5 bg-light-grayish-cyan dark:bg-blue-900 rounded-xl text-right"
             onChange={(e) => handleChange(e.currentTarget.value)}
           />
           <img

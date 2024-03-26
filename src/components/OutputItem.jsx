@@ -5,7 +5,7 @@ const OutputItem = ({ label, value, unit }) => {
         <div>{label}</div>
         {unit && <div className="text-xs text-grayish-cyan">{unit}</div>}
       </div>
-      <div className="text-4xl text-strong-cyan">
+      <div className="text-4xl text-strong-cyan dark:text-blue-200">
         ${value ? value : 0}
       </div>
     </div>
