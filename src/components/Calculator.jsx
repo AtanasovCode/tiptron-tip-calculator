@@ -13,14 +13,17 @@ const Calculator = ({
   totalBill,
   split,
   tipPerPerson,
-  getResult,
+  reset,
+  checkValues,
 }) => {
   return (
-    <div className="
+    <div
+      className="
     bg-white px-6 py-12 flex flex-col rounded-xl w-full
     md:w-3/4 md:flex-row md:m-6
     xl:w-3/5
-  ">
+  "
+    >
       <div className="flex-1 flex flex-col items-start justify-center mb-8 md:mr-8">
         <Input
           formFor="bill"
@@ -39,7 +42,7 @@ const Calculator = ({
             <TipSelect value="15" percent={percent} setPercent={setPercent} />
             <TipSelect value="25" percent={percent} setPercent={setPercent} />
             <TipSelect value="50" percent={percent} setPercent={setPercent} />
-            <input 
+            <input
               type="number"
               placeholder="custom"
               className="
@@ -61,7 +64,13 @@ const Calculator = ({
         />
       </div>
 
-      <Output totalBill={totalBill} tipPerPerson={tipPerPerson} split={split} />
+      <Output
+        reset={reset}
+        totalBill={totalBill}
+        tipPerPerson={tipPerPerson}
+        split={split}
+        checkValues={checkValues}
+      />
     </div>
   );
 };
