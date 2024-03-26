@@ -20,7 +20,7 @@ const Calculator = ({
     <div
       className="
     bg-white px-6 py-12 flex flex-col rounded-xl w-full
-    md:w-3/4 md:flex-row md:m-6
+    md:w-3/4 md:flex-row md:m-6 md:p-6
     xl:w-3/5
   "
     >
