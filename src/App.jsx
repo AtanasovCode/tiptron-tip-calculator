@@ -26,9 +26,9 @@ const App = () => {
 
       let getSplit = parseInt(getTotalBill) / parseInt(people);  //split the full bill betweeen all people
 
-      setTotalBill(getTotalBill);
-      setTipPerPerson(getTipPerPerson);
-      setSplit(getSplit);
+      setTotalBill(getTotalBill.toFixed(2));
+      setTipPerPerson(getTipPerPerson.toFixed(2));
+      setSplit(getSplit.toFixed(2));
     }
   }, [percent, bill, people])
 

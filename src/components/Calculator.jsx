@@ -16,8 +16,12 @@ const Calculator = ({
   getResult,
 }) => {
   return (
-    <div className="bg-white p-6 flex items-stretch justify-center rounded-xl">
-      <div className="flex-1 flex flex-col items-start justify-center mr-8">
+    <div className="
+    bg-white px-6 py-12 flex flex-col rounded-xl w-full
+    md:w-3/4 md:flex-row md:m-6
+    xl:w-3/5
+  ">
+      <div className="flex-1 flex flex-col items-start justify-center mb-8 md:mr-8">
         <Input
           formFor="bill"
           label="Bill"
@@ -27,9 +31,9 @@ const Calculator = ({
           handleChange={setBill}
         />
 
-        <div className="my-8">
+        <div className="my-8 w-full">
           <div className="mb-4">Select Tip %</div>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
             <TipSelect value="5" percent={percent} setPercent={setPercent} />
             <TipSelect value="10" percent={percent} setPercent={setPercent} />
             <TipSelect value="15" percent={percent} setPercent={setPercent} />

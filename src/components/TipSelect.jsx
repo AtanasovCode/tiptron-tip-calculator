@@ -6,7 +6,7 @@ const TipSelect = ({ value, calculateTip, percent, setPercent }) => {
   return (
     <div
       className={`
-          p-3 text-white rounded-lg flex items-center justify-center
+          py-3 text-white rounded-lg flex items-center justify-center
           ${backgroundColor} ${textColor}
           hover:bg-light-grayish-cyan hover:text-black hover:cursor-pointer
         `}
