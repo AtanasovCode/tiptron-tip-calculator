@@ -39,6 +39,15 @@ const Calculator = ({
             <TipSelect value="15" percent={percent} setPercent={setPercent} />
             <TipSelect value="25" percent={percent} setPercent={setPercent} />
             <TipSelect value="50" percent={percent} setPercent={setPercent} />
+            <input 
+              type="number"
+              placeholder="custom"
+              className="
+              [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+              capitalize p-2 rounded-lg bg-light-grayish-cyan
+              "
+              onChange={(e) => setPercent(e.currentTarget.value)}
+            />
           </div>
         </div>
 
